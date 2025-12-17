@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_height="70dp"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:src="@drawable/ic_launcher_splash"
+        android:id="@+id/my_image"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:text="Subscription is activated"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:text="Note: Sometimes It may take few hours to get your subscription details from a google server."
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
+
+</layout>

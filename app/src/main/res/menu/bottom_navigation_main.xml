@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_post_list"
+        android:enabled="true"
+        android:icon="@drawable/ic_article_grey_new"
+        android:title="Posts"
+        app:iconTint="@null"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_articles_list"
+        android:enabled="true"
+        android:iconTint="@null"
+        android:icon="@drawable/ic_home_slt"
+        android:title="Articles"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_quotes"
+        android:enabled="true"
+        android:iconTint="@null"
+        android:icon="@drawable/ic_quotes_slt"
+        android:title="Quotes"
+        app:showAsAction="ifRoom" />
+
+    <item android:id="@+id/coursesList"
+        android:enabled="true"
+        android:iconTint="@null"
+        android:icon="@drawable/courses"
+        android:title="SAVERS"
+        app:showAsAction="ifRoom"/>
+
+</menu>

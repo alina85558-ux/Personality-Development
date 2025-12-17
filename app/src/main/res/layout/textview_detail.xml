@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ll"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/red"
+            android:background="@android:color/transparent"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:paddingLeft="5dp" />
+        <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/red"
+            android:background="@android:color/transparent"
+            android:focusable="false"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:textSize="@dimen/_16ssp"
+            android:text="Play Quiz &amp; Win Upto 50,000 Coins"
+            android:focusableInTouchMode="false"
+            android:paddingLeft="5dp" />
+
+    </LinearLayout>
+
+</layout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00000000"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/rounded_rect_white"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <RadioButton
+                android:id="@+id/rbNewToOld"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:drawableTint="@color/colorPrimary"
+                android:fontFamily=""
+                android:paddingLeft="8dp"
+                android:text="@string/new_to_old"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/rbOldToNew"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawableTint="@color/colorPrimary"
+                android:paddingLeft="8dp"
+                android:text="@string/old_to_new"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/rbLiked"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawablePadding="15dp"
+                android:drawableTint="@color/colorPrimary"
+                android:paddingLeft="8dp"
+                android:text="@string/most_liked"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/rbPremium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawableTint="@color/colorPrimary"
+                android:paddingLeft="8dp"
+                android:text="@string/premium"
+                android:textSize="16sp" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,75 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+
+    ext {
+//        kotlin_version = '1.9.22'
+        kotlin_version = '2.1.20'
+    }
+    repositories {
+        mavenCentral()
+        google()
+    }
+    dependencies {
+//        classpath 'com.android.tools.build:gradle:7.4.2'
+//        classpath 'com.android.tools.build:gradle:8.1.4'
+        classpath 'com.android.tools.build:gradle:8.7.3'
+
+//        classpath 'com.google.gms:google-services:4.4.1'
+//        classpath 'com.google.firebase:firebase-crashlytics-gradle:2.9.9'
+//        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+
+        classpath 'com.google.gms:google-services:4.4.4'
+        classpath 'com.google.firebase:firebase-crashlytics-gradle:3.0.6'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+allprojects {
+    repositories {
+
+        flatDir {
+            dirs 'libs'
+        }
+
+        mavenCentral()
+        maven { url 'https://maven.google.com' }
+        google()
+        maven { url "https://jitpack.io" }
+    }
+
+}
+
+gradle.projectsEvaluated {
+    tasks.withType(JavaCompile.class).tap {
+        configureEach {
+            options.compilerArgs << "-Xmaxerrs" << "10000"
+        }
+    }
+}
+
+allprojects {
+    gradle.projectsEvaluated {
+        tasks.withType(JavaCompile).tap {
+            configureEach {
+                options.compilerArgs << "-Xmaxerrs" << "40000"
+                options.compilerArgs << "-Xmaxwarns" << "40000"
+            }
+        }
+    }
+}
+
+afterEvaluate {
+    if (project.plugins.hasPlugin("kotlin-kapt")) {
+        kapt {
+            javacOptions {
+                option("-Xmaxerrs", 10000)
+            }
+        }
+    }
+}
+
+tasks.register('clean', Delete) {
+    delete rootProject.buildDir
+}
+

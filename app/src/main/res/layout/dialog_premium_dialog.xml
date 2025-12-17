@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/unlock_poster" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/semiMediumSpace">
+
+        <TextView
+            android:id="@+id/txt_titile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/permium_article"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/semiMediumSpace"
+            android:text="@string/in_order_to_unlock_the_premium_article_choose_appropriate_option"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/mediumSpace" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="@dimen/semiMediumSpace"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/ck_select_default_choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:buttonTint="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/txt_ck_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/set_watch_ad_as_my_choice"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/btn_subscribe"
+                style="@style/premium_dialog_button"
+                android:layout_marginRight="@dimen/extraLargeSpace"
+                android:background="@color/colorPrimary"
+                android:text="@string/subscribe"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/btn_watch_ad"
+                style="@style/premium_dialog_button"
+                android:background="@color/colorPrimary"
+                android:bottomLeftRadius="10dp"
+                android:bottomRightRadius="10dp"
+                android:text="@string/watch_ad"
+                android:textColor="@color/white"
+                android:topLeftRadius="10dp"
+                android:topRightRadius="10dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

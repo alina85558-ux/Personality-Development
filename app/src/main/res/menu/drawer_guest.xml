@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:checked="false"
+        android:icon="@drawable/home"
+        android:title="Home" />
+ <!--   <item
+        android:id="@+id/quotes"
+        android:checked="false"
+        android:icon="@drawable/quotes"
+        android:title="Quotes" />-->
+
+    <item
+        android:id="@+id/notification"
+        android:checked="false"
+        android:icon="@drawable/ic_notifications"
+        android:title="Notifications" />
+
+    <item
+        android:id="@+id/request"
+        android:checked="false"
+        android:icon="@drawable/write"
+        android:title="Request Topic" />
+    <item
+        android:id="@+id/feedback"
+        android:checked="false"
+        android:icon="@drawable/feedback"
+        android:title="Feedback/Suggestion" />
+    <item
+        android:id="@+id/favourite"
+        android:checked="false"
+        android:icon="@drawable/star_l"
+        android:title="Favorites" />
+    <item
+        android:id="@+id/purchase"
+        android:checked="false"
+        android:icon="@drawable/premium_badge"
+        android:title="Premium" />
+
+    <group android:id="@+id/group_settings_id">
+        <item
+            android:id="@+id/settings"
+            android:checked="false"
+            android:icon="@drawable/settings"
+            android:title="Settings" />
+        <item
+            android:id="@+id/rate"
+            android:checked="false"
+            android:icon="@drawable/rate"
+            android:title="Rate us" />
+        <item
+            android:id="@+id/share"
+            android:checked="false"
+            android:icon="@drawable/share_main"
+            android:title="Share" />
+        <item
+            android:id="@+id/about"
+            android:checked="false"
+            android:icon="@drawable/about"
+            android:title="About" />
+    </group>
+
+</menu>

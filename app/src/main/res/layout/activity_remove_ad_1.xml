@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.mayur.personalitydevelopment.activity.MainActivity">
+
+        <androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:local="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/toolbar"
+            style="@style/ToolBarWithNavigationBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            app:title="Upgrade to premium"
+            local:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            local:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/badge"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_margin="15dp"
+                        android:src="@drawable/badge_stars"
+                        app:tint="@color/colorPrimary" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="0dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/noad"
+                            android:layout_width="32dp"
+                            android:layout_height="40dp"
+                            android:padding="5dp"
+                            android:src="@drawable/no_ads_icon"
+                            app:tint="@color/colorPrimary" />
+
+                        <TextView
+                            android:id="@+id/t1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:paddingStart="10dp"
+                            android:text="Ad-Free Reading"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="50dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/unlock"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:padding="5dp"
+                            android:src="@drawable/padlock"
+                            app:tint="@color/colorPrimary" />
+
+                        <TextView
+                            android:id="@+id/t5"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:paddingStart="10dp"
+                            android:paddingLeft="10dp"
+                            android:text="Unlock Premium Articles"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="50dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/offline"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:padding="5dp"
+                            android:src="@drawable/ic_offline_access" />
+
+                        <TextView
+                            android:id="@+id/txtOffline"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:paddingStart="10dp"
+                            android:text="Offline access"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="50dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/savers"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:padding="5dp"
+                            android:src="@drawable/courses_active" />
+
+                        <TextView
+                            android:id="@+id/txtSavers"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:paddingStart="10dp"
+                            android:text="SAVERS (Morning routine)"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="50dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/allFunction"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:padding="5dp"
+                            android:src="@drawable/ic_premium_benfis" />
+
+                        <TextView
+                            android:id="@+id/txtAllFunction"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:paddingStart="10dp"
+                            android:text="@string/future_upgrades_features"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/t2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="0dp"
+                        android:fontFamily="fo"
+                        android:text="CHOOSE YOUR SUBSCRIBTION "
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:id="@+id/llScreen"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="9"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <FrameLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:onClick="buy2">
+
+                                <RelativeLayout
+                                    android:id="@+id/rlTwelveBg"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="10dp"
+                                    android:layout_weight="3"
+                                    android:background="@drawable/back_ground_12"
+                                    android:onClick="buy2"
+                                    android:paddingTop="15dp"
+                                    android:paddingBottom="15dp">
+
+
+                                    <TextView
+                                        android:id="@+id/title3"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:onClick="buy2"
+                                        android:text="12 Months"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/white"
+                                        android:textSize="18sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/txtLimitedOffer"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@id/title3"
+                                        android:onClick="buy2"
+                                        android:text="limited Period Offer"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/red1"
+                                        android:textSize="12sp"
+                                        android:visibility="gone" />
+
+                                    <ImageView
+                                        android:id="@+id/icon3"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/title3"
+                                        android:layout_centerHorizontal="true"
+                                        android:onClick="buy2"
+                                        android:src="@drawable/book_12months" />
+
+                                    <TextView
+                                        android:id="@+id/year"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/icon3"
+                                        android:layout_centerInParent="true"
+                                        android:layout_marginBottom="15dp"
+                                        android:onClick="buy2"
+                                        android:text=""
+                                        android:textAlignment="center"
+                                        android:textColor="@color/white"
+                                        android:textSize="16dp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/year_descount"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/year"
+                                        android:layout_centerInParent="true"
+                                        android:layout_marginBottom="15dp"
+                                        android:onClick="buy2"
+                                        android:text="Save 51%"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/white"
+                                        android:textSize="12dp" />
+
+                                </RelativeLayout>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_gravity="bottom|center_horizontal"
+                                    android:layout_marginTop="-10dp"
+                                    android:background="@drawable/rounded_rectangle_white_big_12"
+                                    android:onClick="buy2"
+                                    android:paddingLeft="15dp"
+                                    android:paddingTop="5dp"
+                                    android:paddingRight="15dp"
+                                    android:paddingBottom="5dp"
+                                    android:text="Subscribe"
+                                    android:textColor="@color/month_12_dark"
+                                    android:textSize="10sp" />
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:onClick="buy">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="10dp"
+                                    android:layout_weight="3"
+                                    android:background="@drawable/back_ground_6"
+                                    android:onClick="buy"
+                                    android:paddingTop="15dp"
+                                    android:paddingBottom="15dp">
+
+                                    <TextView
+                                        android:id="@+id/title2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:onClick="buy"
+                                        android:text="6 Months"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/white"
+                                        android:textSize="18dp"
+                                        android:textStyle="bold" />
+
+                                    <ImageView
+                                        android:id="@+id/icon2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/title2"
+                                        android:layout_centerHorizontal="true"
+                                        android:onClick="buy"
+                                        android:src="@drawable/book_6months" />
+
+                                    <TextView
+                                        android:id="@+id/six_month"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/icon2"
+                                        android:layout_centerInParent="true"
+                                        android:layout_marginBottom="15dp"
+                                        android:onClick="buy"
+                                        android:text=""
+                                        android:textAlignment="center"
+                                        android:textColor="@color/white"
+                                        android:textSize="16dp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/six_month_discount"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/six_month"
+                                        android:layout_centerInParent="true"
+                                        android:layout_marginBottom="15dp"
+                                        android:onClick="buy2"
+                                        android:text="Save 32%"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/white"
+                                        android:textSize="12dp" />
+
+                                </RelativeLayout>
+
+                                <TextView
+                                    android:id="@+id/textView2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_gravity="bottom|center_horizontal"
+                                    android:layout_marginTop="-10dp"
+                                    android:background="@drawable/rounded_rectangle_white_big_6"
+                                    android:onClick="buy2"
+                                    android:paddingLeft="15dp"
+                                    android:paddingTop="5dp"
+                                    android:paddingRight="15dp"
+                                    android:paddingBottom="5dp"
+                                    android:text="Subscribe"
+                                    android:textColor="@color/month_6_dark"
+                                    android:textSize="10dp" />
+
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:onClick="buy4">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="10dp"
+                                    android:layout_weight="3"
+                                    android:background="@drawable/back_ground"
+                                    android:onClick="buy4"
+                                    android:paddingTop="15dp"
+                                    android:paddingBottom="15dp">
+
+                                    <TextView
+                                        android:id="@+id/title1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:onClick="buy4"
+                                        android:text="1 Month"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/white"
+                                        android:textSize="18dp"
+                                        android:textStyle="bold" />
+
+                                    <ImageView
+                                        android:id="@+id/icon1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/title1"
+                                        android:layout_centerHorizontal="true"
+                                        android:onClick="buy4"
+                                        android:src="@drawable/book_3months" />
+
+                                    <TextView
+                                        android:id="@+id/three_month"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/icon1"
+                                        android:layout_centerInParent="true"
+                                        android:layout_marginBottom="15dp"
+                                        android:onClick="buy4"
+                                        android:text=""
+                                        android:textAlignment="center"
+                                        android:textColor="@color/white"
+                                        android:textSize="16dp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/three_month_discount"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/three_month"
+                                        android:layout_centerInParent="true"
+                                        android:layout_marginBottom="15dp"
+                                        android:onClick="buy4"
+                                        android:text=""
+                                        android:textAlignment="center"
+                                        android:textColor="@color/white"
+                                        android:textSize="12dp" />
+
+                                </RelativeLayout>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/three_month"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_gravity="bottom|center_horizontal"
+                                    android:layout_marginTop="-10dp"
+                                    android:background="@drawable/rounded_rectangle_white_big"
+                                    android:onClick="buy4"
+                                    android:paddingLeft="15dp"
+                                    android:paddingTop="5dp"
+                                    android:paddingRight="15dp"
+                                    android:paddingBottom="5dp"
+                                    android:text="Subscribe"
+                                    android:textColor="@color/month_3_dark"
+                                    android:textSize="10dp" />
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/lifetimeLinLay"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:background="@drawable/rounded_button1"
+                            android:orientation="vertical"
+                            android:paddingLeft="32dp"
+                            android:gravity="center_vertical"
+                            android:paddingTop="8dp"
+                            android:paddingRight="32dp"
+                            android:paddingBottom="8dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/llScreen">
+
+                            <TextView
+                                android:id="@+id/headerTextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal|center_vertical"
+                                android:textColor="@color/white"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                tools:text="LifeTime Offer" />
+
+                            <TextView
+                                android:id="@+id/subHeaderTextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal|center_vertical"
+                                android:textColor="@color/white"
+                                android:textSize="14sp"
+                                tools:text="Limited Offer" />
+
+                        </LinearLayout>
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                </ScrollView>
+
+                <customview.RegularTextView
+                    android:id="@+id/txtQuote"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:text="@string/make_yourself"
+                    android:textColor="@color/sample_color1"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+    </LinearLayout>
+
+</layout>

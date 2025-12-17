@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "276141712549",
+    "firebase_url": "https://personality-development-10803.firebaseio.com",
+    "project_id": "personality-development-10803",
+    "storage_bucket": "personality-development-10803.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:276141712549:android:e08cb6bb86e7b216",
+        "android_client_info": {
+          "package_name": "com.mayur.personalitydevelopment"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "276141712549-ef5ciboqkaef70sr9nerfa5nhncb9at0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mayur.personalitydevelopment",
+            "certificate_hash": "d4c13230f42c227730fccd276ac36096e99dfb81"
+          }
+        },
+        {
+          "client_id": "276141712549-kh3a8i467mvmhjchrdbn4s16sv4fmp6r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mayur.personalitydevelopment",
+            "certificate_hash": "4a79fbb7729965393769fa37ac963da4aeed79dd"
+          }
+        },
+        {
+          "client_id": "276141712549-j95499fblue3ks6ua6m4pbgj05msksp5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOp8UhyOidccOxLXeydV0ht9vDKK0UMZE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "276141712549-j95499fblue3ks6ua6m4pbgj05msksp5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,137 @@
+<resources>
+    <string name="app_name">BestifyMe</string>
+    <string name="title_activity_deatil">Deatil</string>
+    <!--<string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>--> // TEST
+    <string name="banner_ad_unit_id">ca-app-pub-6954469889387104/4885440330</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="navigation_item_1">Home</string>
+    <string name="navigation_item_2">Events</string>
+    <string name="starred_string">Starred</string>
+    <string name="inbox_string">Inbox</string>
+    <string name="sent_mail_string">Sent mail</string>
+    <string name="draft_string">Drafts</string>
+    <string name="subheader">Subheader</string>
+    <string name="trash_string">Trash</string>
+    <string name="all_mail_string">All mails</string>
+    <string name="spam_string">Spams</string>
+    <string name="closeDrawer">Navigation View</string>
+    <string name="openDrawer">Navigation View Closed</string>
+    <string name="new_rate_dialog_title">RATE US</string>
+    <string name="new_rate_dialog_later">REMIND LATER</string>
+    <string name="new_rate_dialog_never">NO, THANKS</string>
+    <string name="new_rate_dialog_ok">YEAH! SURE</string>
+    <string name="tagline">"A Good Attitude May Fade Away But A Good Personality Goes A Long Way"</string>
+    <string name="rate_dialog_message">This app is the success it is because of you. Do help BestifyMe reach more people by rating the app!  </string>
+
+    <string name="forgot_password">Forgot Password ?</string>
+    <string name="reset_pass">Reset Password</string>
+    <string name="or">Or</string>
+    <string name="next">Next</string>
+    <string name="sign_in_with">Sign in with</string>
+    <string name="sign_up">Create</string>
+    <string name="email">Email</string>
+    <string name="username">Username</string>
+    <string name="postcode">Postcode</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Pin</string>
+    <string name="login">Sign In</string>
+    <string name="first_name">Full Name</string>
+    <string name="last_name">Last name</string>
+    <string name="create_post">Create New Post</string>
+    <string name="edit_post">Edit Post</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="server_client_id">276141712549-kh3a8i467mvmhjchrdbn4s16sv4fmp6r.apps.googleusercontent.com</string>
+    <string name="facebook_app_id">2053803211573804</string>
+    <string name="fb_login_protocol_scheme">fb2053803211573804</string>
+
+    <string name="t_c">Terms and Conditions</string>
+    <string name="i_agree">I agree to the Terms and Conditions</string>
+    <string name="new_to">New to </string>
+    <string name="cannot_be_empty">Cannot be empty</string>
+    <string name="must_be_atleast">Weak Password. Must be at least 6 or more.</string>
+    <string name="invalid_email">Invalid Email</string>
+
+    <string name="likes">&#160;Likes</string>
+    <string name="permium_article">Premium Article</string>
+    <string name="in_order_to_unlock_the_premium_article_choose_appropriate_option">Select your option to enjoy a premium article</string>
+    <string name="set_watch_ad_as_my_choice">I\'m okay with Ad</string>
+    <string name="subscribe">Subscribe</string>
+    <string name="watch_ad">Watch ad</string>
+    <string name="report">Report</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="submit">SUBMIT</string>
+    <string name="str_report_confirm">Did you find this post in-appropriate and wish to report?</string>
+    <string name="str_report_comment_confirm">Did you find this comment in-appropriate and wish to report?</string>
+    <string name="cancel">CANCEL</string>
+    <string name="valid_post">Please Share your thoughts  </string>
+
+    <string name="confirm_delete">Are you sure you want to delete?</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="post_hint">Share your thoughts</string>
+
+    <string name="nativeAdMessage">Ad</string>
+    <string name="press_again_to_exit">Press again to exit</string>
+    <string name="somehing_want_wrong">Something want wrong please try again.</string>
+    <string name="no_internet_connection">No internet connection! please check your internet connection.</string>
+    <string name="no_internet">Slow or no internet connections.\nPlease check your internet settings</string>
+    <string name="premium">Premium only</string>
+    <string name="future_upgrades_features"><![CDATA[Future upgrades & Features]]></string>
+
+    <string name="channel_name">Bestify Me Channel</string>
+    <string name="let_s_share">Let\'s Share</string>
+    <string name="enjoying_our_app">Enjoying Our App?</string>
+    <string name="your_friends_might_like_it_too">Your friends might like it too</string>
+    <string name="make_yourself">The Best Investment You will Ever Make is in Yourself</string>
+    <string name="old_to_new">Old to New</string>
+    <string name="most_liked">Most Liked</string>
+    <string name="new_to_old">New to Old</string>
+    <string name="privacy_policy_text">By using our app, you agree to our </string>
+    <string name="privacy"><u>Terms of Use</u></string>
+
+    // Activity Names
+    <string name="todo_activity">Scribing</string>
+    <string name="create_todo_activity">Add</string>
+    <string name="update_todo_activity">Update</string>
+
+    // Label Texts
+    <string name="title_todo">Title</string>
+    <string name="list_todo">List</string>
+    <string name="save_note">Save</string>
+    <string name="update_note">Update</string>
+    <string name="empty_todo_list">Todo list is empty \n Click + button to create new</string>
+    <string name="enter_title_msg">Title</string>
+
+    // Validation Messages
+    <string name="error_enter_todo_Titile">Enter title</string>
+    <string name="error_add_note">Add note</string>
+
+    // Messages
+    <string name="node_created_successfully">Note created successfully</string>
+    <string name="node_updated_successfully">Note updated successfully</string>
+    <string name="node_deleted_successfully">Note deleted successfully</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="msg_logged_in">You are now logged in</string>
+    <string name="label_english">English</string>
+    <string name="label_hindi">Hindi</string>
+    <string name="msg_select_language_for_article">Select language for article</string>
+    <string name="label_reminder_msg">SET YOUR SAVERS REMINDER</string>
+
+    <string name="reply">Reply</string>
+    <string name="post">Post</string>
+    <string name="comment_as_username">Add a comment…</string>
+    <string name="closeBtn_contentDesc">closeBtn</string>
+    <string name="previous">Previous</string>
+    <string name="reward_adv_ids">ca-app-pub-6954469889387104/6936888601</string>
+    <string name="native_adv_ids">ca-app-pub-6954469889387104/9187932832</string>
+    <!--<string name="banner_adv_ids">ca-app-pub-6954469889387104/4885440330</string>-->
+    <string name="banner_adv_ids">ca-app-pub-6954469889387104/9081358721</string>
+
+</resources>

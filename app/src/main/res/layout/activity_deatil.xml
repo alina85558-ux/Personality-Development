@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:id="@+id/corodinatelayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/adView"
+            android:descendantFocusability="blocksDescendants"
+            android:background="@android:color/background_light"
+            android:fitsSystemWindows="true">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/mainappbar"
+                android:layout_width="match_parent"
+                android:layout_height="225dp"
+                android:fitsSystemWindows="true"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+                <com.google.android.material.appbar.CollapsingToolbarLayout
+                    android:id="@+id/maincollapsing"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fitsSystemWindows="true"
+                    app:contentScrim="?attr/colorPrimary"
+                    app:expandedTitleMarginEnd="64dp"
+                    app:expandedTitleMarginStart="48dp"
+                    app:expandedTitleTextAppearance="@style/TransparentText"
+                    app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                    app:statusBarScrim="@null"
+                    app:title="BestifyMe">
+
+                    <ImageView
+                        android:id="@+id/ivicon"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fitsSystemWindows="true"
+                        android:scaleType="fitXY"
+                        app:layout_collapseMode="parallax" />
+
+                    <androidx.appcompat.widget.Toolbar
+                        android:id="@+id/maintoolbar"
+                        style="@style/ToolBarWithNavigationBack"
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize"
+                        app:layout_collapseMode="pin"
+                        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+                </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <com.mayur.personalitydevelopment.base.MyNestedScrollView
+                android:id="@+id/nested_scroll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:descendantFocusability="afterDescendants"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <LinearLayout
+                    android:id="@+id/linear"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/cardView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        app:cardBackgroundColor="@color/white">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tvTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="0dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginTop="15dp"
+                                android:paddingTop="5dp"
+                                android:text=""
+                                android:textColor="@color/black"
+                                android:textSize="26sp"
+                                android:textStyle="bold" />
+
+                            <com.github.curioustechizen.ago.RelativeTimeTextView
+                                android:id="@+id/tvTime"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="12dp"
+                                android:layout_marginStart="12dp"
+                                android:gravity="center_vertical"
+                                android:text=""
+                                android:textColor="@color/grey3"
+                                android:textSize="12sp"
+                                app:relative_time_prefix="" />
+
+                            <com.google.android.gms.ads.AdView
+                                android:id="@+id/adView1"
+                                android:layout_marginTop="@dimen/_8sdp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                ads:adSize="BANNER"
+                                ads:adUnitId="@string/banner_ad_unit_id" />
+
+                            <ProgressBar
+                                android:id="@+id/pb"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal" />
+
+                            <WebView
+                                android:id="@+id/webview"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp">
+
+                            </WebView>
+
+                            <TextView
+                                android:id="@+id/tvDes"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:focusable="false"
+                                android:focusableInTouchMode="false"
+                                android:text=""
+                                android:textColor="@color/black"
+                                android:textSize="15sp" />
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/rv"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/transparent"
+                                android:orientation="vertical"
+                                app:layoutManager="LinearLayoutManager">
+
+                            </androidx.recyclerview.widget.RecyclerView>
+
+                            <Button
+                                android:id="@+id/btnReadMore"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:focusable="false"
+                                android:clickable="true"
+                                android:background="@color/colorPrimary"
+                                android:textColor="@color/white"
+                                android:text="Read More"
+                                android:textSize="16sp"
+                                android:visibility="visible" />
+
+                            <LinearLayout
+                                android:id="@+id/linearLike"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@android:color/transparent"
+                                android:gravity="center"
+                                android:focusable="false"
+                                android:clickable="true"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:clickable="true"
+                                    android:text="0"
+                                    android:visibility="invisible" />
+
+                                <CheckedTextView
+                                    android:id="@+id/likeIcon"
+                                    android:layout_width="24dp"
+                                    android:layout_height="24dp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/like_icon"
+                                    android:button="@null"
+                                    android:checked="false"
+                                    android:clickable="false"
+                                    android:focusable="true"
+                                    android:stateListAnimator="@animator/scale" />
+
+                                <TextView
+                                    android:id="@+id/tvLikes"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:clickable="true"
+                                    android:text="0" />
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_width="match_parent"
+                                    android:id="@+id/nativeview"
+                                    android:layout_margin="@dimen/_5sdp"
+                                    android:layout_height="wrap_content"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvRelatedArticle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginTop="2dp"
+                        android:visibility="invisible"
+                        android:background="@android:color/transparent"
+                        android:orientation="vertical">
+
+                    </androidx.recyclerview.widget.RecyclerView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:id="@+id/remove_ad"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/adsRem"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/border"
+                            android:gravity="center_horizontal"
+                            android:onClick="Premium_fun"
+                            android:padding="10dp"
+                            android:text="REMOVE ADS"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorPrimary" />
+                    </RelativeLayout>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/shareCard"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginStart="5dp"
+                        android:onClick="Share"
+                        app:cardBackgroundColor="@color/colorPrimary">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:onClick="Share"
+                            android:orientation="horizontal"
+                            android:padding="2dp"
+                            android:weightSum="10">
+
+                            <ImageView
+                                android:id="@+id/img_share"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:src="@drawable/share" />
+
+                            <View
+                                android:id="@+id/line"
+                                android:layout_width="1dp"
+                                android:layout_height="fill_parent"
+                                android:layout_marginBottom="4dp"
+                                android:layout_marginTop="4dp"
+                                android:layout_weight="0.01"
+                                android:background="@color/white" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_weight="7"
+                                android:gravity="center_vertical"
+                                android:text="Share"
+                                android:textAlignment="center"
+                                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                                android:textColor="@color/white" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </com.mayur.personalitydevelopment.base.MyNestedScrollView>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/iv_toggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/selector_toggle_button"
+                app:backgroundTint="@color/colorPrimary"
+                app:layout_anchor="@id/mainappbar"
+                app:layout_anchorGravity="bottom|right|end" />
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center|bottom"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/banner_ad_unit_id"/>
+
+    </RelativeLayout>
+
+</layout>

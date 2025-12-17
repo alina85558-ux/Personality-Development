@@ -1,0 +1,35 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activity.MainActivity">
+
+    <item
+        android:id="@+id/action_search"
+        android:title="@android:string/search_go"
+        android:icon="@drawable/ic_search"
+        app:showAsAction="always"
+        android:visible="true"/>
+
+    <item
+        android:id="@+id/action_filter"
+        android:icon="@drawable/filter"
+        android:title="filter"
+        android:visible="true"
+        app:showAsAction="always" />
+
+
+    <item
+        android:id="@+id/action_select_lang"
+        android:icon="@drawable/ic_lang_one"
+        android:title="language"
+        android:visible="true"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_premium"
+        android:icon="@drawable/premium_badge_small_new"
+        android:title="@string/premium"
+        android:visible="true"
+        app:showAsAction="always" />
+
+</menu>

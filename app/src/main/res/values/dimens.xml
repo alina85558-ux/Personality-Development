@@ -1,0 +1,68 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="miniSpace">0.5dp</dimen>
+    <dimen name="minorSpace">1dp</dimen>
+    <dimen name="semiSmallSpace">2dp</dimen>
+    <dimen name="smallSpace">5dp</dimen>
+    <dimen name="semiMediumSpace">10dp</dimen>
+    <dimen name="mediumSpace">15dp</dimen>
+    <dimen name="semiLargeSpace">18dp</dimen>
+    <dimen name="largeSpace">20dp</dimen>
+    <dimen name="mediumLargeSpace">25dp</dimen>
+    <dimen name="extraLargeSpace">30dp</dimen>
+    <dimen name="_35dp">35dp</dimen>
+    <dimen name="veryLargeSpace">50dp</dimen>
+    <dimen name="login_large_space">60dp</dimen>
+    <dimen name="doubleLargeSpace">90dp</dimen>
+    <dimen name="loader_top">80dp</dimen>
+
+    <dimen name="semiSmallText">10sp</dimen>
+    <dimen name="smallText">12sp</dimen>
+    <dimen name="semiMediumText">13.5sp</dimen>
+    <dimen name="mediumText">16sp</dimen>
+    <dimen name="semiLargeText">20sp</dimen>
+    <dimen name="largeText">30sp</dimen>
+    <dimen name="veryLargeText">35sp</dimen>
+
+    <dimen name="detailsSmall">15dp</dimen>
+    <dimen name="detailsLarge">18dp</dimen>
+
+    <dimen name="image_width">120dp</dimen>
+    <dimen name="image_final_width">32dp</dimen>
+    <dimen name="spacing_normal">16dp</dimen>
+
+    <dimen name="text_size_medium">16sp</dimen>
+    <dimen name="status_bar_button_width_height">48dp</dimen>
+    <dimen name="status_bar_album_art">64dp</dimen>
+    <dimen name="status_bar_button_info_container_padding_left">11dp</dimen>
+    <dimen name="notification_expanded_height">128.0dip</dimen>
+    <dimen name="play_controls_notification">48.0dip</dimen>
+    <dimen name="notification_padding">8.0dip</dimen>
+
+    <item name="gnt_medium_template_bottom_weight" format="float" type="dimen">0.4</item>
+    <item name="gnt_text_row_weight" format="float" type="dimen">0.25</item>
+    <item name="gnt_media_view_weight" format="float" type="dimen">1.0</item>
+    <item name="gnt_medium_template_top_weight" format="float" type="dimen">0.2</item>
+    <dimen name="gnt_default_margin">5dp</dimen>
+    <dimen name="gnt_text_size_small">12sp</dimen>
+    <dimen name="gnt_text_size_large">15sp</dimen>
+    <dimen name="gnt_ad_indicator_width">25dp</dimen>
+    <dimen name="gnt_ad_indicator_height">20dp</dimen>
+    <dimen name="gnt_ad_indicator_bar_height">30dp</dimen>
+    <dimen name="gnt_ad_indicator_top_margin">0dp</dimen>
+    <dimen name="gnt_ad_indicator_bottom_margin">10dp</dimen>
+    <dimen name="gnt_ad_indicator_text_size">10sp</dimen>
+    <dimen name="gnt_small_cta_button_height">30dp</dimen>
+    <dimen name="gnt_medium_cta_button_height">50dp</dimen>
+    <dimen name="gnt_no_margin">0dp</dimen>
+    <dimen name="gnt_no_size">0dp</dimen>
+
+    <dimen name="spacing_between_items">10dp</dimen>
+    <dimen name="spacing_between_lines">10dp</dimen>
+
+
+</resources>

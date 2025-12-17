@@ -1,0 +1,32 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:personalityDevelopment2="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@drawable/ic_edit_pro"
+        android:orderInCategory="100"
+        android:title=""
+        personalityDevelopment2:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_setting"
+        android:icon="@drawable/ic_settings"
+        android:orderInCategory="50"
+        android:title=""
+        personalityDevelopment2:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_bookmark"
+        android:icon="@drawable/ic_bookmark_black"
+        android:orderInCategory="50"
+        android:title=""
+        personalityDevelopment2:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_like"
+        android:title=""
+        android:icon="@drawable/ic_favorite_heart_button"
+        android:orderInCategory="70"
+        personalityDevelopment2:showAsAction="always" />
+
+</menu>

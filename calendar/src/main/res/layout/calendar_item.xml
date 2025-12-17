@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llCalendarItem"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/llback"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerInside"
+        tools:tint="@color/colorAccent"
+        android:src="@drawable/level6"/>
+
+    <ImageView
+        android:id="@+id/ivFillPercentage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:tint="@color/colorPrimaryDark"
+        android:scaleType="centerInside"
+        tools:tint="@color/colorAccent"
+        android:src="@drawable/empty_circle"/>
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/black"
+        android:layout_gravity="center"
+        android:textSize="@dimen/h5"
+        tools:text="asdasd"/>
+
+</FrameLayout>

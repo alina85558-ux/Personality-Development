@@ -1,0 +1,215 @@
+import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.google.firebase.crashlytics'
+
+
+repositories {
+    maven { url 'https://maven.fabric.io/public' }
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+
+android {
+    namespace = "com.mayur.personalitydevelopment"
+    compileSdk = 35
+    signingConfigs {
+        /*config {
+            keyAlias 'm@k8866206455'
+            keyPassword 'm@k8866206455'
+            storeFile file('/Users/sagar/Project/AndroidProj/vg2.jks')
+            storePassword 'm@k8866206455'
+        }*/
+    }
+   /* packagingOptions {
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/MANIFEST.MF'
+        pickFirst 'lib/armeabi-v7a/libassmidi.so'
+        pickFirst 'lib/x86/libassmidi.so'
+    }*/
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+//    dexOptions {
+//        preDexLibraries = false
+//        javaMaxHeapSize "4g"
+//    }
+
+    defaultConfig {
+        applicationId "com.mayur.personalitydevelopment"
+//        minSdkVersion 21
+        minSdkVersion 23
+        targetSdkVersion 35
+//        versionCode 68
+//        versionName "4.2.37" // 10 Sep 2023
+
+//        versionCode 69
+//        versionName "4.2.38" // 29 Sep 2023
+
+//        versionCode 70
+//        versionName "4.2.39" // 5th Nov 2023
+
+//        versionCode 71
+//        versionName "4.2.40" // 27th Nov 2023
+
+//        versionCode 72
+//        versionName "4.2.41" // 28th May 2024
+
+//        versionCode 73
+//        versionName "4.2.42" // 26th oct 2025
+
+        versionCode 74
+        versionName "4.2.43" // 27th oct 2025
+
+        multiDexEnabled true //Add this
+        vectorDrawables.useSupportLibrary = true
+    }
+
+    dataBinding {
+        enabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            //signingConfig signingConfigs.config
+            debuggable false
+           // signingConfig signingConfigs.config
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
+    }
+
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    buildFeatures {
+        buildConfig = true
+    }
+
+}
+
+tasks.withType(KotlinCompile).configureEach {
+    kotlinOptions {
+        jvmTarget = "17"
+    }
+}
+
+dependencies {
+//    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.constraintlayout:constraintlayout:2.2.1'
+    implementation fileTree(include: ['*.jar', '*.aar'], dir: 'libs')
+    implementation('com.github.bumptech.glide:glide:4.11.0') {
+        exclude group: "com.android.support"
+    }
+//    implementation 'com.google.android.material:material:1.11.0'
+    implementation 'com.google.android.material:material:1.13.0'
+    implementation 'com.github.hotchemi:android-rate:1.0.1'
+    implementation 'com.squareup.retrofit2:retrofit:2.8.1'
+    implementation 'com.squareup.retrofit2:converter-gson:2.6.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.github.curioustechizen.android-ago:library:1.4.0'
+    implementation 'org.jsoup:jsoup:1.13.1'
+    //Firebase
+//    implementation 'com.google.firebase:firebase-messaging:23.4.1'
+    implementation 'com.google.firebase:firebase-messaging:25.0.1'
+    implementation 'com.google.firebase:firebase-core:21.1.1'
+    //Google
+//    implementation 'com.google.android.gms:play-services-auth:21.0.0'
+//    implementation 'com.google.android.gms:play-services-ads:23.0.0'
+//    implementation platform('com.google.firebase:firebase-bom:30.1.0')
+
+    implementation 'com.google.android.gms:play-services-auth:21.4.0'
+    implementation 'com.google.android.gms:play-services-ads:24.7.0'
+    implementation platform('com.google.firebase:firebase-bom:34.4.0')
+
+    //Facebook
+    implementation 'com.facebook.android:facebook-android-sdk:[5,6)'
+    // Adjust the version accordingly
+//    implementation 'org.sufficientlysecure:html-textview:3.9'
+    //for multidex
+    implementation 'androidx.multidex:multidex:2.0.1'
+//    implementation ':3.12.0'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
+    //  updated by satish nada on 19 August 2018
+   /* implementation 'com.github.yalantis:ucrop:2.2.4'
+    implementation 'androidx.room:room-runtime:2.6.1'
+    implementation 'com.google.android.gms:play-services-maps:18.2.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"*/
+
+    // updated by ARTI October 2025
+    implementation 'com.github.yalantis:ucrop:2.2.4'
+    implementation 'androidx.room:room-runtime:2.8.2'
+    implementation 'com.google.android.gms:play-services-maps:19.2.0'
+    implementation 'androidx.appcompat:appcompat:1.7.1'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+
+//    implementation 'com.google.firebase:firebase-crashlytics:18.5.1'
+//    implementation 'com.google.firebase:firebase-analytics:21.5.0'
+//    annotationProcessor 'androidx.room:room-compiler:2.6.0'
+
+    implementation 'com.google.firebase:firebase-crashlytics:20.0.3'
+    implementation 'com.google.firebase:firebase-analytics:23.0.0'
+    implementation 'androidx.activity:activity:1.8.2'
+//    annotationProcessor 'androidx.room:room-compiler:2.6.0'
+    annotationProcessor 'androidx.room:room-compiler:2.8.2'
+
+//    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.7.0'
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.9.4'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+//    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.9.4'
+    implementation 'com.google.android.exoplayer:exoplayer-core:2.19.1'
+    implementation 'com.google.android.exoplayer:exoplayer-hls:2.19.1'
+    implementation project(':calendar')
+
+    // CircularSeekBar Seekbar
+    implementation 'me.tankery.lib:circularSeekBar:1.4.2'
+
+    // flowlayout Manager
+//    implementation 'com.xiaofeng.android:flowlayoutmanager:1.2.3.2'
+
+    implementation 'com.airbnb.android:lottie:3.4.0'
+    implementation 'com.android.support.constraint:constraint-layout:2.0.4'
+    implementation 'androidx.cardview:cardview:1.0.0'
+//    implementation 'androidx.recyclerview:recyclerview:1.3.2'
+    implementation 'androidx.recyclerview:recyclerview:1.4.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.9.0'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+    implementation 'com.intuit.ssp:ssp-android:1.0.6'
+//    implementation 'androidx.appcompat:appcompat:1.6.1'
+//    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.appcompat:appcompat:1.7.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.2.1'
+
+//    implementation 'com.android.billingclient:billing-ktx:6.0.1'
+    implementation 'com.android.billingclient:billing-ktx:8.0.0'
+
+
+    implementation 'androidx.preference:preference-ktx:1.2.1'
+
+    implementation 'androidx.browser:browser:1.8.0'
+    implementation 'com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava'
+
+    implementation ("androidx.core:core-splashscreen:1.0.1")
+
+    implementation 'com.google.android.play:app-update:2.1.0'
+
+}
+apply plugin: 'kotlin-android'
