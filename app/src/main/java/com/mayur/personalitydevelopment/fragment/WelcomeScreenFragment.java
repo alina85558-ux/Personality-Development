@@ -9,8 +9,14 @@ import android.widget.Button;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.mayur.personalitydevelopment.R;
+import com.mayur.personalitydevelopment.adapter.ProfileImageAdapter;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class WelcomeScreenFragment extends Fragment {
 
@@ -35,6 +41,23 @@ public class WelcomeScreenFragment extends Fragment {
                 listener.onContinueClicked();
             }
         });
+
+        RecyclerView rvProfilePictures = rootView.findViewById(R.id.rvProfilePictures);
+        rvProfilePictures.setLayoutManager(new GridLayoutManager(getContext(), 3));
+
+        List<Integer> imageList = new ArrayList<>();
+        imageList.add(R.drawable.ic_user);
+        imageList.add(R.drawable.ic_user);
+        imageList.add(R.drawable.ic_user);
+        imageList.add(R.drawable.ic_user);
+        imageList.add(R.drawable.ic_user);
+        imageList.add(R.drawable.ic_user);
+        imageList.add(R.drawable.ic_user);
+        imageList.add(R.drawable.ic_user);
+        imageList.add(R.drawable.ic_user);
+
+        ProfileImageAdapter adapter = new ProfileImageAdapter(getContext(), imageList);
+        rvProfilePictures.setAdapter(adapter);
 
         return rootView;
     }
